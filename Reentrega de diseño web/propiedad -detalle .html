@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Propiedad - HogarPlus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container container">
+        <div class="logo">
+            <div class="logo-icon">HP</div>
+            <div class="logo-text">Hogar<span>Plus</span></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="asesoramiento.html">Asesoramiento</a></li>
+                <li><a href="propiedades.html">Propiedades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="container" style="margin-top: 40px;">
+
+    <div id="property-container"></div>
+
+</section>
+
+<script>
+/* BASE DE DATOS DE PROPIEDADES */
+const propiedades = {
+    1: {
+        id: 1,
+        titulo: "Casa moderna con piscina",
+        precio: "$250.000",
+        ubicacion: "San Luis Capital",
+        imagenes: ["images/images/propiedades/propiedad1.jpg", "images/images/propiedades/propiedad1-1.jpg"],
+        ambientes: 4,
+        banos: 2,
+        cochera: 1
+    },
+    2: {
+        id: 2,
+        titulo: "Departamento en zona céntrica",
+        precio: "$130.000",
+        ubicacion: "Villa Mercedes",
+        imagenes: ["images/images/propiedades/propiedad2.jpg"],
+        ambientes: 3,
+        banos: 1,
+        cochera: 0
+    },
+    3: {
+        id: 3,
+        titulo: "Terreno 500m²",
+        precio: "$40.000",
+        ubicacion: "Juana Koslay",
+        imagenes: ["images/images/propiedades/propiedad3.jpg"],
+        ambientes: 0,
+        banos: 0,
+        cochera: 0
+    },
+    4: {
+        id: 4,
+        titulo: "Casa en barrio privado",
+        precio: "$320.000",
+        ubicacion: "La Punta",
+        imagenes: ["images/images/propiedades/propiedad4.jpg"],
+        ambientes: 5,
+        banos: 3,
+        cochera: 2
+    },
+    5: {
+        id: 5,
+        titulo: "Cabaña turística",
+        precio: "$80.000",
+        ubicacion: "El Volcán",
+        imagenes: ["images/images/propiedades/propiedad5.jpg"],
+        ambientes: 2,
+        banos: 1,
+        cochera: 1
+    },
+    6: {
+        id: 6,
+        titulo: "Local comercial 120m²",
+        precio: "$150.000",
+        ubicacion: "San Luis Centro",
+        imagenes: ["images/images/propiedades/propiedad6.jpg"],
+        ambientes: 1,
+        banos: 1,
+        cochera: 0
+    }
+};
+
+/* OBTENER ID DE URL */
+const params = new URLSearchParams(window.location.search);
+const id = params.get("id");
+
+/* CONTENEDOR */
+const container = document.getElementById("property-container");
+
+if (propiedades[id]) {
+
+    const p = propiedades[id];
+
+    container.innerHTML = `
+        <div class="property-header">
+            <div class="property-info">
+                <h1>${p.titulo}</h1>
+                <div class="property-price">${p.precio}</div>
+                <div class="property-location"><i>📍</i> ${p.ubicacion}</div>
+                <div class="property-features-overview">
+                    <div class="feature-item"><i class="feature-icon">🛏</i>${p.ambientes} Ambientes</div>
+                    <div class="feature-item"><i class="feature-icon">🚿</i>${p.banos} Baños</div>
+                    <div class="feature-item"><i class="feature-icon">🚗</i>${p.cochera} Cochera</div>
+                </div>
+                <a href="propiedades.html" class="btn btn-outline" style="margin-top:20px;">← Volver</a>
+            </div>
+
+            <div class="property-actions">
+                <div class="property-gallery">
+                    <div class="gallery-main">
+                        <img id="mainImage" src="${p.imagenes[0]}">
+                    </div>
+                    <div class="gallery-thumbnails">
+                        ${p.imagenes.map(img => `
+                            <img class="thumbnail" src="${img}" onclick="document.getElementById('mainImage').src='${img}'">
+                        `).join('')}
+                    </div>
+                </div>
+            </div>
+        </div>
+    `;
+
+} else {
+    container.innerHTML = `
+        <h2>Propiedad no encontrada</h2>
+        <a href="propiedades.html" class="btn btn-outline">Volver a Propiedades</a>
+    `;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - HogarPlus Inmobiliaria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <div class="logo-icon">HP</div>
+                <div class="logo-text">Hogar<span>Plus</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+        <li><a href="propiedades.html">Propiedades</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="asesoramiento.html">Asesoramiento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+   <section class="hero" style="background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('images/images/hero/hero-contacto.jpg'); background-size: cover; background-position: center;">
+
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para ayudarte a encontrar la propiedad de tus sueños. No dudes en contactarnos.</p>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="container" style="padding: 80px 0;">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h2>Estamos para Ayudarte</h2>
+                <p>En HogarPlus Inmobiliaria, nos especializamos en hacer realidad tus proyectos inmobiliarios. Contamos con un equipo de profesionales listos para asistirte.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Oficina Central</h4>
+                            <p>Av. Libertador 4567, CABA<br>Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h4>Teléfonos</h4>
+                            <p>+54 11 9876-5432<br>+54 11 2345-6789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@hogarplus.com<br>ventas@hogarplus.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h4>Horarios de Atención</h4>
+                            <p>Lunes a Viernes: 9:00 - 19:00<br>Sábados: 9:00 - 13:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <h4>Síguenos en Redes Sociales</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/hogarplus.inmobiliaria" class="social-icon">📘</a>
+                        <a href="https://instagram.com/hogarplus.inmobiliaria" class="social-icon">📷</a>
+                        <a href="https://twitter.com/hogarplus_ar" class="social-icon">🐦</a>
+                        <a href="https://linkedin.com/company/hogarplus-inmobiliaria" class="social-icon">💼</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de Contacto -->
+            <div class="contact-form-container">
+                <h2>Envíanos un Mensaje</h2>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <select id="asunto" class="form-control">
+                                <option value="">Selecciona un asunto</option>
+                                <option value="compra">Quiero comprar</option>
+                                <option value="alquiler">Quiero alquilar</option>
+                                <option value="vender">Quiero vender</option>
+                                <option value="alquilar">Quiero alquilar mi propiedad</option>
+                                <option value="info">Solicitar información</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="propiedad-interes">Propiedad de interés (opcional)</label>
+                        <input type="text" id="propiedad-interes" class="form-control" placeholder="Código o dirección de la propiedad">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" class="form-control" rows="5" required placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" required>
+                            Acepto la política de privacidad y recibir información sobre propiedades
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn" style="width: 100%;">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mapa -->
+    <section class="map-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px; color: var(--color-primario);">Nuestra Ubicación</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div style="background: #e9ecef; height: 400px; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+                        <div style="text-align: center;">
+                            <div style="font-size: 3rem; margin-bottom: 20px;">🗺️</div>
+                            <h3>Mapa de Ubicación</h3>
+                            <p>Av. Libertador 4567, CABA</p>
+                            <a href="https://maps.google.com" target="_blank" class="btn" style="margin-top: 20px;">Ver en Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo de Asesores -->
+    <section class="offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestro Equipo</h2>
+                <p>Conoce a nuestros asesores especializados</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">👨‍💼</div>
+                    <h3>Martín Rodríguez</h3>
+                    <p class="member-role">Asesor Comercial</p>
+                    <p>Especialista en propiedades de alta gama</p>
+                    <div class="member-contact">
+                        <span>📞 +54 11 2345-6789</span>
+                        <span>✉️ martin@hogarplus.com</span>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">👩‍💼</div>
+                    <h3>Carolina López</h3>
+                    <p class="member-role">Asesora de Alquileres</p>
+                    <p>Experta en contratos y garantías</p>
+                    <div class="member-contact">
+                        <span>📞 +54 11 3456-7890</span>
+                        <span>✉️ carolina@hogarplus.com</span>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-photo">👨‍💼</div>
+                    <h3>Diego Fernández</h3>
+                    <p class="member-role">Asesor de Inversiones</p>
+                    <p>Especialista en oportunidades de mercado</p>
+                    <div class="member-contact">
+                        <span>📞 +54 11 4567-8901</span>
+                        <span>✉️ diego@hogarplus.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>HogarPlus Inmobiliaria</h3>
+                    <p>Tu socio confiable en la búsqueda de propiedades. Más de 15 años ayudando a familias a encontrar su hogar ideal.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                      <li><a href="index.html">Inicio</a></li>
+        <li><a href="propiedades.html">Propiedades</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        <li><a href="asesoramiento.html">Asesoramiento</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Av. Libertador 4567, CABA</li>
+                        <li>📞 +54 11 9876-5432</li>
+                        <li>✉️ info@hogarplus.com</li>
+                        <li>🕒 Lun-Vie: 9:00-19:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://facebook.com/hogarplus.inmobiliaria">Facebook</a></li>
+                        <li><a href="https://instagram.com/hogarplus.inmobiliaria">Instagram</a></li>
+                        <li><a href="https://twitter.com/hogarplus_ar">Twitter</a></li>
+                        <li><a href="https://linkedin.com/company/hogarplus-inmobiliaria">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 HogarPlus Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

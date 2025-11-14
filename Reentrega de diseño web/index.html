@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HogarPlus Inmobiliaria - Encuentra tu hogar ideal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">
+                <div class="logo-icon">HP</div>
+                <div class="logo-text">Hogar<span>Plus</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="propiedades.html">Propiedades</a></li>
+                    <li><a href="categorias.html">Categorías</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="asesoramiento.html">Asesoramiento</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url(images/images/hero/hero-bg.jpg); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1>Encuentra tu hogar ideal</h1>
+            <p>En HogarPlus Inmobiliaria te ayudamos a encontrar la propiedad perfecta para ti. Contamos con una amplia selección de casas, departamentos y terrenos en las mejores ubicaciones.</p>
+            <a href="propiedades.html" class="btn">Ver Propiedades</a>
+        </div>
+    </section>
+
+    <!-- Buscador -->
+    <div class="container">
+        <div class="search-box">
+            <form class="search-form" id="main-search-form">
+                <div class="form-group">
+                    <label for="tipo">Tipo de propiedad</label>
+                    <select id="tipo" class="form-control">
+                        <option value="">Todos los tipos</option>
+                        <option value="casa">Casa</option>
+                        <option value="departamento">Departamento</option>
+                        <option value="terreno">Terreno</option>
+                        <option value="local">Local comercial</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="operacion">Operación</label>
+                    <select id="operacion" class="form-control">
+                        <option value="">Todas las operaciones</option>
+                        <option value="venta">Venta</option>
+                        <option value="alquiler">Alquiler</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ubicacion">Ubicación</label>
+                    <input type="text" id="ubicacion" class="form-control" placeholder="Barrio, ciudad...">
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio máximo</label>
+                    <input type="number" id="precio" class="form-control" placeholder="Precio máximo">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 25px;">
+                        🔍 Buscar Propiedades
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Propiedades destacadas -->
+    <section class="container">
+        <div class="section-title">
+            <h2>Propiedades Destacadas</h2>
+            <p>Descubre nuestras propiedades más exclusivas seleccionadas especialmente para ti</p>
+        </div>
+        
+        <div class="properties-grid">
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/images/propiedades/propiedad2-1.jpg" alt="Casa moderna con piscina">
+                </div>
+                <div class="property-details">
+                    <div class="property-price">$350,000</div>
+                    <h3 class="property-title">Casa moderna con piscina</h3>
+                    <div class="property-location">
+                        <i>📍</i> Barrio Norte, Buenos Aires
+                    </div>
+                    <div class="property-features">
+                        <div class="feature"><span class="feature-value">4</span><span class="feature-label">Dormitorios</span></div>
+                        <div class="feature"><span class="feature-value">3</span><span class="feature-label">Baños</span></div>
+                        <div class="feature"><span class="feature-value">180m²</span><span class="feature-label">Superficie</span></div>
+                    </div>
+                    <a href="propiedad-detalle.html?id=1" class="btn btn-outline" style="width: 100%; margin-top: 15px;">Ver Detalles</a>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/images/propiedades/propiedad3-1.jpg" alt="Casa familiar con jardín">
+                </div>
+                <div class="property-details">
+                    <div class="property-price">$420,000</div>
+                    <h3 class="property-title">Casa familiar con jardín</h3>
+                    <div class="property-location">
+                        <i>📍</i> Palermo, Buenos Aires
+                    </div>
+                    <div class="property-features">
+                        <div class="feature"><span class="feature-value">5</span><span class="feature-label">Dormitorios</span></div>
+                        <div class="feature"><span class="feature-value">3</span><span class="feature-label">Baños</span></div>
+                        <div class="feature"><span class="feature-value">250m²</span><span class="feature-label">Superficie</span></div>
+                    </div>
+                    <a href="propiedad-detalle.html?id=2" class="btn btn-outline" style="width: 100%; margin-top: 15px;">Ver Detalles</a>
+                </div>
+            </div>
+            
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/images/propiedades/propiedad3-5.jpg" alt="Departamento en zona céntrica">
+                </div>
+                <div class="property-details">
+                    <div class="property-price">$185,000</div>
+                    <h3 class="property-title">Departamento en zona céntrica</h3>
+                    <div class="property-location">
+                        <i>📍</i> Microcentro, CABA
+                    </div>
+                    <div class="property-features">
+                        <div class="feature"><span class="feature-value">2</span><span class="feature-label">Dormitorios</span></div>
+                        <div class="feature"><span class="feature-value">2</span><span class="feature-label">Baños</span></div>
+                        <div class="feature"><span class="feature-value">75m²</span><span class="feature-label">Superficie</span></div>
+                    </div>
+                    <a href="propiedad-detalle.html?id=3" class="btn btn-outline" style="width: 100%; margin-top: 15px;">Ver Detalles</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ofertas especiales -->
+    <section class="offers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Ofertas Especiales</h2>
+                <p>Descubre nuestras promociones exclusivas y oportunidades únicas en el mercado inmobiliario</p>
+            </div>
+            
+            <div class="offer-cards">
+                <div class="offer-card" onclick="location.href='contacto.html?servicio=financiacion'">
+                    <div class="offer-icon">🏠</div>
+                    <h3>Financiación Directa</h3>
+                    <p>Obtén financiamiento directo con tasas preferenciales y hasta 20 años para pagar tu nueva propiedad.</p>
+                    <div class="offer-link">Solicitar Información →</div>
+                </div>
+                
+                <div class="offer-card" onclick="location.href='contacto.html?servicio=primera-vivienda'">
+                    <div class="offer-icon">💰</div>
+                    <h3>Primera Vivienda</h3>
+                    <p>Programa especial para compradores de primera vivienda con beneficios fiscales y asesoramiento gratuito.</p>
+                    <div class="offer-link">Consultar Beneficios →</div>
+                </div>
+                
+                <div class="offer-card" onclick="location.href='contacto.html?servicio=inversiones'">
+                    <div class="offer-icon">📈</div>
+                    <h3>Inversión Segura</h3>
+                    <p>Propiedades con alto potencial de revalorización en zonas de desarrollo urbano planificado.</p>
+                    <div class="offer-link">Ver Oportunidades →</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>HogarPlus Inmobiliaria</h3>
+                    <p>Tu socio confiable en la búsqueda de propiedades. Más de 15 años ayudando a familias a encontrar su hogar ideal.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="propiedades.html">Propiedades</a></li>
+                        <li><a href="categorias.html">Categorías</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="asesoramiento.html">Asesoramiento</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Av. Libertador 4567, CABA</li>
+                        <li>📞 +54 11 9876-5432</li>
+                        <li>✉️ info@hogarplus.com</li>
+                        <li>🕒 Lun-Vie: 9:00-19:00</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://facebook.com/hogarplus.inmobiliaria">Facebook</a></li>
+                        <li><a href="https://instagram.com/hogarplus.inmobiliaria">Instagram</a></li>
+                        <li><a href="https://twitter.com/hogarplus_ar">Twitter</a></li>
+                        <li><a href="https://linkedin.com/company/hogarplus-inmobiliaria">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 HogarPlus Inmobiliaria. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
